@@ -1,0 +1,24 @@
+{  
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "100899",
+   "database": "vozdopovo",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/database/models/**/*.ts"
+   ],
+   "migrations": [
+      "src/database/migrations/**/*.ts"
+   ],
+   "subscribers": [
+      "src/database/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/database/models",
+      "migrationsDir": "src/database/migrations",
+      "subscribersDir": "src/database/subscriber"
+   }
+}
